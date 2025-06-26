@@ -1,0 +1,114 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 920px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .column {
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sedans {
+            background-color: #e38826;
+        }
+        
+        .suvs {
+            background-color: #006970;
+        }
+        
+        .luxury {
+            background-color: #004241;
+        }
+        
+        .icon {
+            width: 64px;
+            height: 40px;
+            margin-bottom: 35px;
+        }
+        
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .title {
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            margin-bottom: 25px;
+        }
+        
+        .description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 83px;
+            flex-grow: 1;
+        }
+        
+        .btn {
+            background-color: #f2f2f2;
+            border: 2px solid #f2f2f2;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: fit-content;
+        }
+        
+        .sedans .btn {
+            color: #e38826;
+        }
+        
+        .suvs .btn {
+            color: #006970;
+        }
+        
+        .luxury .btn {
+            color: #004241;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                max-width: 327px;
+            }
+            
+            .column {
+                padding: 48px;
+            }
+            
+            .description {
+                margin-bottom: 25px;
+            }
+        }
